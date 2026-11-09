@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Личная библиотека авторских классов D&D">
+  <title>Кодекс • Авторские классы</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script><script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="?" data-home><span class="brand-mark">✧</span><span>КОДЕКС<small>МАСТЕРСКАЯ КЛАССОВ</small></span></a><nav><button data-action="catalog" class="nav-active">Библиотека</button><button data-action="settings">Подключение</button></nav><span class="edition">D&D · HOMEBREW</span></header>
+  <div id="connection" class="connection" role="status"></div>
+  <main id="app"></main>
+  <footer><span>КОДЕКС <b>✧</b> Твои правила. Твои истории.</span><span>Неофициальный инструмент для авторских классов</span></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="settings"><form method="dialog"><div class="eyebrow">ХРАНИЛИЩЕ</div><h2>Подключение к Google Drive</h2><p>Укажи адрес развёрнутого веб-приложения Apps Script. Код доступа берётся только из части ссылки после #.</p><label>URL веб-приложения<input id="api-url" type="url" placeholder="https://script.google.com/macros/s/…/exec"></label><p class="muted">Адрес можно сохранить в этом браузере или прописать в config.js для всех посетителей. Секрет в настройки не записывается.</p><div class="dialog-actions"><button value="cancel" class="secondary">Закрыть</button><button type="button" id="connect" class="primary">Подключить</button><button type="button" id="demo" class="secondary">Деморежим</button></div><p id="settings-error" role="alert"></p></form></dialog>
+</body></html>
